@@ -1,0 +1,95 @@
+/* Center the table container on the page and apply box shadow */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 400; /* Regular weight */
+}
+.table-container {
+  width: 75%; /* Adjust width as needed */
+  margin: 0 auto;
+  background-color: #ffffff; /* White background */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  overflow: hidden; /* Prevents the table from overflowing */
+}
+
+/* Basic table styles */
+table {
+  border-collapse: collapse;
+  width: 100%; /* Full width of the container */
+  background-color: #ffffff; /* White background for the entire table */
+}
+
+/* Header styles */
+ th {
+  padding: 16px 20px; /* Adjust padding as needed */
+  text-align: left;
+  font-size: 14px; /* Adjust font size */
+  color: #0B435B; /* Dark text color */
+  border-bottom: 2px solid black; /* Black border between rows */
+}
+td{
+  padding: 16px 20px; /* Adjust padding as needed */
+  text-align: left;
+  font-size: 14px; /* Adjust font size */
+  color: #707070; /* Dark text color */
+  border-bottom: 1px solid rgba(184, 174, 174, 0.658) !important; /* Black border between rows */
+}
+
+/* Black border after each header row */
+th {
+  background-color: #f9f9f9; /* Slightly different background for headers */
+  font-weight: bold;
+  border-bottom: 1px solid rgba(184, 174, 174, 0.658) !important; /* Ensure headers have a solid black bottom border */
+}
+
+/* Hover effect for rows */
+tr:hover {
+  background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+/* Table heading styles */
+.table-heading h2 {
+  margin-left: 15rem;
+  text-align: left; /* Center the table heading */
+  margin-bottom: 30px; /* Add some space below the heading */
+  margin-top: 10px;
+  color: #0B435B;
+  font-weight: 900 !important;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+
+/* Optional: Error message styling */
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
