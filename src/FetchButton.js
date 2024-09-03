@@ -16,7 +16,7 @@ function FetchButton() {
     window.location.href = authorizationUrl;
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {e.preventDefault();};
    const setEmail = () => {};
 
     const setPassword = () => {};
